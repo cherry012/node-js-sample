@@ -42,3 +42,27 @@ For more information about using Node.js on Heroku, see these Dev Center article
 - [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
 - [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
 - [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+
+############################## 
+# Node.js Application CI/CD Pipeline
+
+## Features
+- Runs tests automatically on pull requests.
+- Builds Docker images and deploys to a Kubernetes cluster.
+- Sends deployment success or failure notifications.
+
+## Requirements
+- Docker
+- Kubernetes
+- GitHub Secrets configured for Docker Hub and Kubernetes.
+
+## Workflow
+1. Clone this repository.
+2. Add the required secrets to GitHub.
+3. Push your changes and make a pull request.
+
+## Local Testing
+- Run the app locally:
+  ```bash
+  npm install
+  npm start
